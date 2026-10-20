@@ -1,0 +1,2 @@
+ALTER TABLE public.appointments DROP CONSTRAINT appointments_preferred_time_check;
+ALTER TABLE public.appointments ADD CONSTRAINT appointments_preferred_time_check CHECK (preferred_time IN ('Morning', 'Afternoon', 'Evening'));

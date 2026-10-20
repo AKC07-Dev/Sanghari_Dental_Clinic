@@ -1,5 +1,27 @@
 {
   "version": "7",
   "dialect": "postgresql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792494819253,
+      "tag": "0000_create_appointment_requests",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792494959699,
+      "tag": "0001_secure_appointment_submissions",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792495032735,
+      "tag": "0002_appointment_time_preferences",
+      "breakpoints": true
+    }
+  ]
 }
