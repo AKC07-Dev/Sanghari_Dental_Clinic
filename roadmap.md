@@ -1,0 +1,4 @@
+- [ ] Create clinic design system and responsive patient-facing pages.
+- [ ] Add secure appointment persistence, validation, and confirmation/WhatsApp preference flow.
+- [ ] Add route metadata, configuration guidance, and focused tests.
+- [ ] Verify the booking journey, build, and roadmap completion.
