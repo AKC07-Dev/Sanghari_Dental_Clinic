@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep shareable pages in `src/routes/`, reusable clinic UI in `src/components/clinic/`, and patient-facing clinic facts in `src/lib/clinic-config.ts`; this preserves TanStack route discovery and one clear source for unverified business details.

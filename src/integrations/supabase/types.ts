@@ -14,13 +14,78 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      appointment_submission_limits: {
+        Row: {
+          ip_fingerprint: string
+          request_count: number
+          window_started_at: string
+        }
+        Insert: {
+          ip_fingerprint: string
+          request_count?: number
+          window_started_at?: string
+        }
+        Update: {
+          ip_fingerprint?: string
+          request_count?: number
+          window_started_at?: string
+        }
+        Relationships: []
+      }
+      appointments: {
+        Row: {
+          consent_at: string
+          created_at: string
+          id: string
+          patient_name: string
+          patient_note: string | null
+          patient_phone: string
+          preferred_date: string
+          preferred_time: string
+          reference_code: string
+          status: string
+          updated_at: string
+          visit_reason: string
+        }
+        Insert: {
+          consent_at: string
+          created_at?: string
+          id?: string
+          patient_name: string
+          patient_note?: string | null
+          patient_phone: string
+          preferred_date: string
+          preferred_time: string
+          reference_code: string
+          status?: string
+          updated_at?: string
+          visit_reason: string
+        }
+        Update: {
+          consent_at?: string
+          created_at?: string
+          id?: string
+          patient_name?: string
+          patient_note?: string | null
+          patient_phone?: string
+          preferred_date?: string
+          preferred_time?: string
+          reference_code?: string
+          status?: string
+          updated_at?: string
+          visit_reason?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      consume_appointment_submission_limit: {
+        Args: { _ip_fingerprint: string }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
